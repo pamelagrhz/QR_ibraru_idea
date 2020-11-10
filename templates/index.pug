@@ -1,0 +1,43 @@
+
+doctype html
+html(lang="es")
+  head
+    link(rel="stylesheet" type="text/css" href="styles.css")
+    link(href='https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap' rel='stylesheet')
+    script(src='https://kit.fontawesome.com/8994a44ae2.js' crossorigin='“anonymous"')
+
+    title qr template
+  body
+    include includes/header
+    div.picture
+      p QR PARKING CDMX
+      div.icons
+        a(href="qr-info.html")
+          i.fas.fa-qrcode
+        a(href="")
+          i.fas.fa-car
+        a(href="")
+          i.fas.fa-car.fa-map-marked-alt
+        a(href="covid-info.html")
+          i.fas.fa-car.fa-virus
+    div.mision
+      h1 ¿Cuál es nuestra misión?
+      P ni idea pero aqui vamos a escribir algo bien fregon que convenza a la gente para que digan.
+      p oh! cielos, esta app seguro es chingona
+    div.cards  
+      a(href="qr-info.html").card
+        img(src="./img/qr.jpg", alt="")
+        div.card-title QR
+        div.card-txt 
+          span Descubre que es un código QR, y como funciona.
+      a(href="park-info.html").card
+        img(src="./img/park4.jpg", alt="")
+        div.card-title PARQUIMETROS 
+        div.card-txt 
+          span Conoce cómo funcionan los parquimetros de la CDMX y donde se ubican
+      a(href="covid-info.html").card
+        img(src="./img/covid.jpg", alt="")
+        div.card-title COVID-19
+        div.card-txt 
+          span Más a cerca de éste virus y como es que los qr nos son de ayuda durante la pandemia 
+    include includes/footer

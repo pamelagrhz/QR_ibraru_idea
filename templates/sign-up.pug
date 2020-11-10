@@ -1,0 +1,25 @@
+
+doctype html
+html(lang="es")
+  head
+    link(rel="stylesheet" type="text/css" href="styles.css")
+    link(href='https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap' rel='stylesheet')
+    script(src='https://kit.fontawesome.com/8994a44ae2.js' crossorigin='“anonymous"')
+
+    title qr template
+  body
+    include includes/header
+    form(action="")
+      div.card.sign-in
+        div.card-title Inicia sesión:
+          div.input
+            input(type="email", name="" placeholder="Correo electronico ")
+          div.input
+            input(type="password", name="" placeholder="Contrasena") 
+          div.boton Continuar
+          div
+           a(href="sign-in.html") Registrarse
+           a(href="") Olvidé mi contraseña
+      
+
+    include includes/footer

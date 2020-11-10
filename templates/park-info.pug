@@ -1,0 +1,31 @@
+
+doctype html
+html(lang="es")
+  head
+    link(rel="stylesheet" type="text/css" href="styles.css")
+    link(href='https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap' rel='stylesheet')
+    script(src='https://kit.fontawesome.com/8994a44ae2.js' crossorigin='“anonymous"')
+
+    title qr template
+  body
+    include includes/header
+    p.brand QR Y PARQUIMETROS EN LA CDMX 
+    center
+      img(src="./img/park1.jpg", alt="")
+    div.info
+      dl
+        dt ¿Como funcionan los parquimetros en la cdmx?
+          dd
+            p La idea básica de un parquímetro es: un aparato que registra el tiempo que un auto puede estacionarse en la calle. En la CDMX estos periodos se cuentan por cuartos de hora, cada uno con un costo de 2.34 pesos. El periodo máximo que se permite registrar es de 6 horas. De esta forma se controla el periodo que un automóvil permanece estacionado en las calles de las zonas que administra el programa ecoParq.
+            p Al estacionarte debes buscar el parquímetro más cercano. Existen distintos modelos de parquímetro, la idea básica es un aparato que mide el paso del tiempo y registra el tiempo que un vehículo puede estacionarse en la vía pública. Una vez que se identificó el parquímetro se realiza el pago del tiempo estimado que se permanecerá ahí. Los parquímetros digitales entregan un comprobante que debe dejarse en una parte visible del vehículo para evitar multas.
+      img(src="./img/park2.jpg", alt="")
+    div.info
+      img(src="./img/park4.jpg", alt="")
+      dl    
+        dt Importante 
+          ul
+            li Se debe registrar por adelantado el tiempo de estacionamiento. Si se excede este periodo el vehículo puede ser inmovilizado o retirado con grúa. Para evitar que esto pase hay 5 minutos de tolerancia una vez que concluyó el tiempo que se pagó.
+            li El servicio de parquímetros funciona de 8 am a 8 pm de lunes a viernes, fuera de este periodo el tiempo no se cuenta, es decir que si se pagan 2 horas a las 7:30 pm, el servicio concluye a las 9:30 del día siguiente.
+            li La idea del parquímetro es permitir el libre tránsito durante las horas de mayor afluencia y ofrecer un beneficio a la comunidad al mismo tiempo.
+    a.boton(href="#") MÁS INFORMACIÓN 
+    include includes/footer

@@ -1,0 +1,34 @@
+
+doctype html
+html(lang="es")
+  head
+    link(rel="stylesheet" type="text/css" href="styles.css")
+    link(href='https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap' rel='stylesheet')
+    script(src='https://kit.fontawesome.com/8994a44ae2.js' crossorigin='“anonymous"')
+
+    title qr template
+  body
+    include includes/header
+    div.picture.cvid
+      img(src="cvid.png", alt="")
+    div  
+      div.cards.covid  
+        div.card
+          div.card-title COVID-19
+          div.card-txt 
+            p Los coronavirus son una extensa familia de virus que pueden causar enfermedades tanto en animales como en humanos. En los humanos, se sabe que varios coronavirus causan infecciones respiratorias que pueden ir desde el resfriado común hasta enfermedades más graves como el síndrome respiratorio de Oriente Medio (MERS) y el síndrome respiratorio agudo severo (SRAS). El coronavirus que se ha descubierto más recientemente causa la enfermedad por coronavirus COVID-19.      
+        div.inv
+          h1 ¿Cuales son los sintomas del covid?
+          p Los síntomas más habituales de la COVID-19 son la fiebre, la tos seca y el cansancio. Otros síntomas menos frecuentes que afectan a algunos pacientes son los dolores y molestias, la congestión nasal, el dolor de cabeza, la conjuntivitis, el dolor de garganta, la diarrea, la pérdida del gusto o el olfato y las erupciones cutáneas o cambios de color en los dedos de las manos o los pies. Estos síntomas suelen ser leves y comienzan gradualmente. Algunas de las personas infectadas solo presentan síntomas levísimos.
+          p La mayoría de las personas (alrededor del 80%) se recuperan de la enfermedad sin necesidad de tratamiento hospitalario. Alrededor de 1 de cada 5 personas que contraen la COVID‑19 acaba presentando un cuadro grave y experimenta dificultades para respirar. Las personas mayores y las que padecen afecciones médicas previas como hipertensión arterial, problemas cardiacos o pulmonares, diabetes o cáncer tienen más probabilidades de presentar cuadros graves. Sin embargo, cualquier persona puede contraer la COVID‑19 y caer gravemente enferma. Las personas de cualquier edad que tengan fiebre o tos y además respiren con dificultad, sientan dolor u opresión en el pecho o tengan dificultades para hablar o moverse deben solicitar atención médica inmediatamente. Si es posible, se recomienda llamar primero al profesional sanitario o centro médico para que estos remitan al paciente al establecimiento sanitario adecuado.
+          a(href="https://coronavirus.gob.mx/datos/" target="_blank").boton Revisar las estadisticas actuales del covid 
+    div
+      div.inv
+        h1 Recomendaciones para evitar el covid.
+        
+    div.inv
+      h1 Codigos QR
+      p Aunque la tecnología del código QR ya era popular antes de que aparezca el SARS-cov-2, con la llegada del nuevo coronavirus ha cobrado mayor auge. Los códigos QR conectan dos mundos: el físico y el digital y permiten entrar en una aplicación informática móvil.
+      a(href="qr-info.html").boton Más sobre el codigo QR
+     
+    include includes/footer

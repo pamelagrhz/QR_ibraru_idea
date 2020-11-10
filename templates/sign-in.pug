@@ -1,0 +1,44 @@
+
+doctype html
+html(lang="es")
+  head
+    link(rel="stylesheet" type="text/css" href="styles.css")
+    link(href='https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap' rel='stylesheet')
+    script(src='https://kit.fontawesome.com/8994a44ae2.js' crossorigin='“anonymous"')
+
+    title qr template
+  body
+    include includes/header
+    form(action="")
+      div.card.sign-in
+        div.card-title Crea tu cuenta:
+          div.input
+            input(type="text" placeholder="Nombre(s)") 
+          div.input
+            input(type="text" placeholder="Apellido(s)")
+          div.input
+            input(type="email", name="" placeholder="Correo electronico ")
+          div.input
+            input(type="password", name="" placeholder="Contrasena") 
+          div.input
+            input(type="password", name="" placeholder="Confirmar contrasena")
+          div.input
+            label Fecha de nacimiento
+          div.input
+            input(type="date", name="" min="1900-01-01" max="2020-01-01")
+          div.input    
+            label(for="") Genero
+          div.input
+            input(type='radio' name='opc' value='fem')
+            |  Femenino
+            input(type='radio' name='opc' value='masc')
+            |  Masculino
+            input(type='radio' name='opc' value='oth')
+            |  Otro
+          div
+            div.boton Continuar
+          div
+           a(href="sign-up.html") Ya tengo una cuenta
+      
+
+    include includes/footer
